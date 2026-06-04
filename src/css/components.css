@@ -60,7 +60,6 @@ footer i:hover {
 }
 
 .hamburger-icon {
-  position: absolute;
   left: 1rem;
   cursor: pointer;
   margin-right: 0rem;
@@ -207,9 +206,6 @@ footer i:hover {
 }
 
 .arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   background: var(--color-primary);
   color: var(--color-secondary);
   width: 40px;
@@ -228,14 +224,24 @@ footer i:hover {
   color:  var(--color-primary);
 }
 
+.arrow.right {
+  position: absolute;
+  right: 0;
+  top: 45%;
+  margin-right: 10px;
+}
+
+.arrow.left {
+  position: absolute;
+  left: 0;
+  top: 45%;
+  margin-left: 10px;
+}
+
 /* --- ">" ARROW DATA ICONS FOR BUTTONS --- */
 .arrow::before {
   content: attr(data-icon);
 }
-
-/* --- NAV ARROWS PLACEMENT FOR ITEM SHOWCASE --- */
-.arrow.left { left: 10px; }
-.arrow.right { right: 10px; }
 
 /* --- CONNECTS ARROWS WITH RADIO INPUT CHECKBOXES, ADDED !important; TO MAKE SURE CONTENT SHOWS CORRECT WAY--- */
 #slider-1:checked ~ .arrow-1-left,

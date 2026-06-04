@@ -1,46 +1,44 @@
 @import url(_variables.css);
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
-/* HERO BACKGROUND IMAGES - 100vh EACH --- */
+main {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  gap: 50px;
+}
+
 .hero-container {
-  position: relative;
-  width: 100%;
-  height: 200vh;
-  scroll-behavior: smooth;
-}
-
-.hero-container:target {
-    scroll-margin-top: 100px;
-}
-
-.hero-background-image,
-.hero-background-image-2{
-  width: 100%;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   height: 100vh;
+  scroll-behavior: smooth;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.hero-background-image {
   background-image: url(/assets/images/hero-background-image.jpg);
-  background-position: bottom center;
-}
 
-.hero-background-image-2 {
-  background-image: url(/assets/images/hero-background-image-2.svg);
-  background-position: top center;
-  margin-top: -1px;
 }
 
 header {
   position:fixed;
   top: 0;
-  left: 0;
   width: 100%;
   z-index: 20;
   background: var(--color-primary);
-  padding: 1.5rem 2rem;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -122,7 +120,7 @@ header .header-logo {
 
 nav {
   position: absolute;
-  top: 100%;
+  top: 98%;
   left: 0;
   width: 100%;
   background: var(--color-primary);
@@ -134,10 +132,10 @@ nav {
 
 nav a {
   display: block;
-  padding: 20px 20px;
-  padding-bottom: 40px;
+  padding: 40px;
   font-size: 1.5rem;
   text-decoration: none;
+  color: var(--color-secondary);
 }
 
 .mobile-view {
@@ -183,6 +181,12 @@ nav a {
   margin-left: 7rem;
 }
 
+@media (max-width: 1440px) {
+  .sub-header-left {
+    margin-left: 2rem;
+  }
+}
+
 .sub-header-center {
   position: absolute;
   left: 50%;
@@ -203,23 +207,14 @@ nav a {
 }
 
 /* --- HIDES SUB-HEADER WHEN VIEWING ON SMALLER SCREENS --- */
-@media (min-width:1081px) {
+@media (min-width:1250px) {
   .sub-header {
     display: flex;
   }
 }
 
-/* ### MAIN CONTENT LAYOUT ### */
-.hero-container:target ~ footer,
-.hero-container:has( ~ footer) {
-  transform: translateY(0);
-}
-
 .main-content-container-1 {
-  position: absolute;
-  top: 25vh;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
   max-width: 800px;
   width: 90%;
   height: clamp(280px, 28vh, 340px);
@@ -229,15 +224,11 @@ nav a {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* --- MIGHT REMOVE BOX STYLING LATER --- */
   text-align: center;
   z-index: 10;
-  margin-bottom: 10vh;
   border-radius: 0%;
+  margin-top: 200px;
 }
 
 .main-category-image-buttons {
-  position: absolute;
-  top: calc(25vh + clamp(280px, 28vh, 340px) + 50px); /* --- CALCULATES POSITION AND HEIGHT OF SHOWCASE ABOVE FOR CONSISTENT PLACEMENT --- */
-  left: 50%;
-  transform: translateX(-50%);
   height: auto;
   max-width: 800px;
   width: 90%;
@@ -414,6 +405,7 @@ nav a {
 }
 
 footer {
+  width: 100%;
   background: rgb(1, 77, 73);
   padding: 1.5rem;
   margin-top: -1px;

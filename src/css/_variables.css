@@ -37,7 +37,7 @@ footer {
   background: var(--color-primary);
 }
 
-header a:not(.login-button):not(.register-button), /* --- EXCLUDES LOGIN AND REGISTER BUTTONS FROM COLOR RULES ABOVE --- */
+header a:not(.login-button):not(.register-button) :not(.sub-header), /* --- EXCLUDES LOGIN AND REGISTER BUTTONS FROM COLOR RULES ABOVE --- */
 header i,
 footer a,
 footer i {
