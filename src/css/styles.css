@@ -1,0 +1,51 @@
+@import url(_reset.css);
+@import url(_variables.css);
+@import url(layouts.css);
+@import url(components.css);
+@import url(typhografy.css);
+
+*, *::before, *::after { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; }
+html, body { 
+    width: 100%; 
+    overflow-x: hidden; }
+
+/* --- HIDE SHOWCASE ON SMALLER SCREENS, CATEGORY NAV IS MORE IMPORTANT, SHOWCASE TOO COMPLEX ON SMALLER SCREENS--- */
+@media (max-width: 768px) {
+    .main-content-container-1 {
+        display: none;
+    }
+
+    .main-category-image-buttons {
+        position: fixed;
+        top: 40vh;
+    }
+}
+
+/* --- SHOW ONLY HAMBURGER, LOGO AND CART ON SMALLER SCREEENS --- */
+@media (max-width: 1024px) {
+    .header-main-categories{
+        display: none;
+    }
+
+    .login-button,
+    .register-button {
+        display: none;
+    }
+
+    header .header-logo {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hamburger-icon {
+        display: block;
+    }
+
+    .cart-button {
+        margin-left: auto;
+    }
+}
+    
