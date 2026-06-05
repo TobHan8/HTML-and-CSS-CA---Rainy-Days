@@ -18,26 +18,76 @@
     .header-main-categories{
         display: none;
     }
-
     header .header-logo {
         left: 50%;
         transform: translateX(-50%);
     }
-
-    .hamburger-icon {
-
-    }
-    
-
-
     .cart-button {
         margin-left: auto;
+    }
+
+    .all-products {
+        width: 900px;
+    }
+    .all-products h2 {
+        font-size: 20px;
+    }
+    .item-card img {
+        height: 150px;
+    }
+    .product-sizes {
+        gap: 30px;
+        align-self: center;
+    }
+    .product-sizes button {
+        font-size: 0.75rem;
+        padding-top: unset;
+        padding: 0.4rem 0.62rem;
+    }
+    .product-amount {
+        gap: 0.75rem;
+    }
+    .product-details-link {
+        font-size: 1rem;
+        padding: 0;
+    }
+    .item-footer {
+        align-items: center;
+    }
+    .add-to-cart-button {
+        font-size: 0.8rem;
+        padding: 0.8rem 2rem;
+    }
+    .price-container {
+        gap: 10px;
+    }
+    .price-del {
+        font-size: 1.5rem;
+    }
+    .product-price {
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 1080px) {
     .login-button,
     .register-button {
+        display: none;
+    }
+    nav a {
+        font-size;
+    }
+}
+
+@media (max-width: 950px) {
+    .all-products {
+        width: 500px;
+    }
+    .item-content {
+    grid-template-columns: 1fr;
+    }
+    .back-button,
+    .checkout-button {
         display: none;
     }
 }
@@ -58,6 +108,66 @@
     .main-category-image-buttons {
         margin-top: 200px;
     }
+    .all-products {
+        margin-top: 160px;
+    }
+}
+
+@media (max-width: 540px) {
+    .all-products {
+        width: 350px;
+        margin-top: 100px;
+    }
+    .all-products h1 {
+        font-size: 20px;
+    }
+    .item-card {
+        padding: unset;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+    .item-card h2 {
+        grid-column: unset;
+    }
+    .item-card img {
+        grid-row: 2;
+        height: 180px;
+    }
+    .product-details-link {
+        grid-row: 3;
+    }
+    .product-sizes {
+        grid-row: 4;
+        grid-column: unset;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .product-amount {
+        grid-row: 5;
+        grid-column: unset;
+        margin-left: unset;
+        gap: unset;
+        gap: 20px;
+        margin-top: 20px;
+        justify-content: center;
+    }
+    .item-footer {
+        grid-row: 6;
+    }
+    .add-to-cart-button {
+        font-size: 0.8rem;
+        padding: 0.8rem 1rem;
+    }
+    .price-container {
+        gap: 10px;
+    }
+    .price-del {
+        font-size: 1rem;
+    }
+    .product-price {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 420px) {
@@ -67,4 +177,7 @@
     nav {
         top: 60px;
     }
+    .all-products {
+        width: 350px;
+        margin-top: 60px;
 }

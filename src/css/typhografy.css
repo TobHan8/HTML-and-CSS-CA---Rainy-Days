@@ -5,6 +5,10 @@ header {
     font-size: 1.5rem;
 }
 
+h1, h2, h3, button, a, span {
+    font-family: var(--font-main);
+}
+
 .sub-header {
     font-family: var(--font-main);
 }
