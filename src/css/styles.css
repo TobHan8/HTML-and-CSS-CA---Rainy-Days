@@ -9,21 +9,12 @@
     padding: 0; 
     box-sizing: border-box; }
 
-/* --- HIDE SHOWCASE ON SMALLER SCREENS, CATEGORY NAV IS MORE IMPORTANT, SHOWCASE TOO COMPLEX ON SMALLER SCREENS--- */
-@media (max-width: 768px) {
-
-    .main-content-container-1 {
-        display: none;
-    }
-
-    .main-category-image-buttons {
-        position: fixed;
-        top: 40vh;
-    }
-}
-
 /* --- SHOW ONLY HAMBURGER, LOGO AND CART ON SMALLER SCREEENS --- */
 @media (max-width: 1250px) {
+
+    header {
+        height: 100px;
+    }
     .header-main-categories{
         display: none;
     }
@@ -36,9 +27,8 @@
     .hamburger-icon {
 
     }
-    .hamburger-icon i {
-        font-size: 40px;
-    }
+    
+
 
     .cart-button {
         margin-left: auto;
@@ -51,4 +41,30 @@
         display: none;
     }
 }
-    
+
+/* --- HIDE SHOWCASE ON SMALLER SCREENS, CATEGORY NAV IS MORE IMPORTANT, SHOWCASE TOO COMPLEX ON SMALLER SCREENS--- */
+@media (max-width: 768px) {
+    header {
+        height: 80px;
+    }
+    nav {
+        top: 80px;
+    }
+
+    .main-content-container-1 {
+        display: none;
+    }
+
+    .main-category-image-buttons {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 420px) {
+    header {
+        height: 60px;
+    }
+    nav {
+        top: 60px;
+    }
+}
