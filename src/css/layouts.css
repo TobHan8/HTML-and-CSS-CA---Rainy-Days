@@ -143,9 +143,9 @@ nav {
 
 nav a {
   display: block;
-  padding: clamp(1rem, 5vw, 3rem);
+  padding: clamp(1rem, 5vw, 2rem);
   padding-left: clamp(1rem, 5vw, 1.5rem);
-  font-size: clamp(20px, 5vw, 30px);
+  font-size: clamp(15px, 5vw, 30px);
   text-decoration: none;
   color: var(--color-secondary);
 }
