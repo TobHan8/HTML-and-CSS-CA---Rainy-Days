@@ -153,6 +153,12 @@
     .about-section p {
         font-size: 15px;
     }
+    .about-us-footer {
+        justify-content: center;
+    }
+    .about-us h1 {
+        font-size: 30px;
+    }
 
 
 }
@@ -170,9 +176,10 @@
         display: none;
     }
 
-    .main-category-image-buttons {
-        margin-top: 200px;
+    .see-all-mobile {
+        display: flex;
     }
+
     .all-products,
     .product-details-container,
     .checkout-cart-container,
@@ -184,6 +191,12 @@
 @media (max-width: 540px) {
     .product-details-container {
         margin-top: 100px;
+    }
+
+    .see-all-mobile a {
+        font-size: 15px;
+        padding: 1.25rem;
+        margin-bottom: unset;
     }
 
     .all-products,
@@ -326,6 +339,12 @@
     }
     nav {
         top: 60px;
+    }
+
+    .see-all-mobile a {
+        font-size: 12px;
+        padding: 1rem;
+        margin-top: 100px;
     }
     .all-products,
     .product-details-container {
