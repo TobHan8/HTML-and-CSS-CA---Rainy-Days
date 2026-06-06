@@ -96,7 +96,7 @@ h1, h2, h3, button, a, span {
     font-family: var(--font-main);
     color: var(--color-primary);
     font-size: 3rem;
-    margin: 0 0 2rem 0;
+    margin: 0 0 4rem 0;
     text-align: center;
 }
 
@@ -105,6 +105,7 @@ h1, h2, h3, button, a, span {
     font-size: 1.8rem;
     margin: 0 0 1rem 0;
     color: var(--color-primary);
+    text-align: center;
 }
 
 .product-details-description p {
@@ -141,9 +142,16 @@ h1, h2, h3, button, a, span {
     order: 0;
 }
 
-.similar-products-container h5 {
+.details-price-del {
     font-family: var(--font-main);
     color: var(--color-primary);
+    text-decoration: line-through;
+    font-size: 2rem;
+    order: 0;
+}
+
+.similar-products-container h5 {
+    font-family: var(--font-main);
     font-size: 2.5rem;
     text-align: center;
     margin: 0 0 2rem 0;

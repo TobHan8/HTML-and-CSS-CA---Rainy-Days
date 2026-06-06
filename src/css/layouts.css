@@ -13,7 +13,6 @@ main {
   min-height: 100vh;
   flex-direction: column;
   align-items: center;
-  justify-content: top;
   gap: 50px;
 }
 
@@ -292,15 +291,10 @@ nav a {
 
 /* ### PRODUCT DETAILS PAGE LAYOUT ### */
 .product-details-container {
-  position: absolute;
-  top: 20vh;
-  left: 50%;
-  transform: translateX(-50%) scale(0.80);
-  transform-origin: top center;
-  max-width: 1200px;
-  width: 90%;
+  width: 1200px;
   z-index: 10;
   padding: 2rem;
+  margin-top: 200px;
 }
 
 .product-details-header {
@@ -309,7 +303,7 @@ nav a {
   align-items: center;
   background: var(--color-primary);
   padding: 1rem 2rem;
-  margin-bottom: 0rem;
+  margin-bottom: -1rem;
   border-radius: 0px;
   position: relative;
   z-index: 11;
@@ -339,7 +333,12 @@ nav a {
 .product-details-info {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  align-items: center;
+  gap: 3rem;
+}
+
+.product-details-sizes {
+  text-align: center;
 }
 
 .details-buy-section {
@@ -352,7 +351,7 @@ nav a {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .amount-buttons {
@@ -365,6 +364,7 @@ nav a {
   display: flex;;
   align-items: center;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 .similar-products-container {
@@ -375,8 +375,7 @@ nav a {
 }
 
 .similar-products-container h5 {
-  background: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-primary);
   padding: 1.5rem;
   margin: -2rem -2rem 2rem -2rem;
 }
@@ -394,7 +393,6 @@ nav a {
   text-align: center;
   display: flex;
   flex-direction: column;
-  transition: transform 0.3s ease;
 }
 
 .similar-products-footer {
@@ -407,6 +405,7 @@ nav a {
   border-radius: 0px;
   position: relative;
   z-index: 11;
+  margin-bottom: -1rem;
 }
 
 footer {
@@ -428,11 +427,6 @@ footer {
 
 
 /* --- FORCING CORRECT PLACEMENT ON DIFFERENT SCREEN WIDTHS --- */
-@media (max-width: 1024px) {
-  .similar-products-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 @media (max-width: 768px) {
   .product-details-main {

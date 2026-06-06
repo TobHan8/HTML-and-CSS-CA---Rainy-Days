@@ -608,8 +608,7 @@ footer i:hover {
 }
 
 .product-details-image img {
-  width: 100%;
-  max-width: 500px;
+  width: 500px;
   height: auto;
   object-fit: contain;
   background-color: var(--color-white);
@@ -623,7 +622,8 @@ footer i:hover {
 
 .size-buttons-details {
   display: flex;
-  gap: 1rem
+  gap: 2rem;
+  align-items: center;
 }
 
 .price.del {
@@ -650,10 +650,6 @@ footer i:hover {
 .details-add-to-cart-button:hover {
   background-color: var(--color-secondary);
   color: var(--color-primary);
-}
-
-.similar-card:hover {
-  opacity: 0.5;
 }
 
 .similar-card img {
