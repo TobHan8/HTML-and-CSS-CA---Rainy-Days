@@ -295,6 +295,17 @@
         align-items: center;
         gap: 10px;
     }
+
+    .checkout-confirmation-content {
+        height: 350px;
+    }
+    .confirmation-image {
+        width: 200px;
+        height: 100px;
+    }
+    .continue-btn {
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 420px) {

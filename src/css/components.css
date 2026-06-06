@@ -836,6 +836,7 @@ footer i:hover {
   position: relative;
   z-index: 11;
 }
+.continue-btn,
 .checkout-cart-footer a {
   background: var(--color-secondary);
   color: var(--color-primary);
@@ -850,6 +851,11 @@ footer i:hover {
   font-weight: 800;
 }
 
+.continue-btn:hover{
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
 .checkout-cart-footer a:hover {
   background: var(--color-tertiary);
   color: var(--color-white);
@@ -857,25 +863,25 @@ footer i:hover {
 
 .checkout-confirmation-content {
   background-color: var(--color-white);
-  padding: 4rem 2rem;
+  padding: 2rem;
   z-index: 11;
-  min-height: 400px;
-  position: relative;
+  height: 500px;
+  gap: 50px;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.confrimation-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+.confirmation-image {
+  width: 300px;
+  height: 150px;
+  overflow: hidden;
 }
 
-.confrimation-image img {
-  max-width: 300px;
+.confirmation-image img {
+  display: block;
+  height: 100%;
   width: 100%;
-  object-fit: contain;
-  height: auto;
+  object-fit: cover;
 }
