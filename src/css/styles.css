@@ -26,7 +26,9 @@
         margin-left: auto;
     }
 
-    .all-products {
+    .all-products,
+    .product-details-container,
+    .checkout-cart-container {
         width: 900px;
     }
     .all-products h2 {
@@ -67,10 +69,6 @@
     .product-price {
         font-size: 2rem;
     }
-
-    .product-details-container {
-        width: 900px;
-    }
     .product-details-container h2,
     .product-details-container h5 {
         font-size: 40px;
@@ -93,7 +91,8 @@
 }
 
 @media (max-width: 950px) {
-    .all-products {
+    .all-products,
+    .checkout-cart-container {
         width: 500px;
     }
     .item-content {
@@ -125,6 +124,33 @@
         grid-template-columns: 1fr;
     }
 
+    .cart-item {
+        position: relative;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        padding: 1rem;
+    }
+    .remove-item {
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+    .cart-amount {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .cart-item-price {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .next-button-header {
+        display: none;
+    }
+    .checkout-cart-footer {
+        justify-content: center;
+    }
+
+
 }
 
 /* --- HIDE SHOWCASE ON SMALLER SCREENS, CATEGORY NAV IS MORE IMPORTANT, SHOWCASE TOO COMPLEX ON SMALLER SCREENS--- */
@@ -150,12 +176,14 @@
 }
 
 @media (max-width: 540px) {
-    .all-products {
+    .all-products,
+    .checkout-cart-container {
         width: 350px;
         margin-top: 100px;
     }
     .all-products h1,
-    .product-details-container h1 {
+    .product-details-container h1,
+    .checkout-cart-container h1 {
         font-size: 20px;
     }
     .product-details-container h2,
@@ -231,6 +259,42 @@
     .details-price-del {
         font-size: 20px;
     }
+
+    .cart-item {
+        position: relative;
+        grid-template-columns: 1fr;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    .remove-item {
+        position: absolute;
+        top: 70px;
+        right: 0;
+    }
+    .cart-item-details {
+        grid-row: 1;
+    }
+    .cart-item img {
+        grid-row: 2;
+    }
+
+    .cart-item-amount {
+        grid-row: 3;
+        
+    }
+    .cart-item-price {
+        grid-column: unset;
+        grid-row: 4;
+        text-align: center;
+    }
+    .cart-summary {
+        gap: 30px;
+    }
+    .summary {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }
 
 @media (max-width: 420px) {
@@ -264,3 +328,4 @@
     .product-details-card {
         padding: 1rem;
     }
+}
