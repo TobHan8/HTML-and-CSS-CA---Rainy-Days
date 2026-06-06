@@ -79,20 +79,20 @@
     .similar-products-cards {
         grid-template-columns: repeat(2, 1fr);
     }
+}
 
 @media (max-width: 1080px) {
     .login-button,
     .register-button {
         display: none;
     }
-    nav a {
-        font-size;
-    }
 }
 
 @media (max-width: 950px) {
     .all-products,
-    .checkout-cart-container {
+    .checkout-cart-container,
+    .about-us,
+    .product-details-container {
         width: 500px;
     }
     .item-content {
@@ -103,9 +103,6 @@
         display: none;
     }
 
-    .product-details-container {
-        width: 500px;
-    }
     .product-details-container h2,
     .product-details-container h5
     {
@@ -150,6 +147,13 @@
         justify-content: center;
     }
 
+    .about-us-header a {
+        display: none;
+    }
+    .about-section p {
+        font-size: 15px;
+    }
+
 
 }
 
@@ -170,20 +174,28 @@
         margin-top: 200px;
     }
     .all-products,
-    .product-details-container {
+    .product-details-container,
+    .checkout-cart-container,
+    .about-us {
         margin-top: 160px;
     }
 }
 
 @media (max-width: 540px) {
+    .product-details-container {
+        margin-top: 100px;
+    }
+
     .all-products,
-    .checkout-cart-container {
+    .checkout-cart-container,
+    .about-us {
         width: 350px;
         margin-top: 100px;
     }
     .all-products h1,
     .product-details-container h1,
-    .checkout-cart-container h1 {
+    .checkout-cart-container h1,
+    .about-us h1 {
         font-size: 20px;
     }
     .product-details-container h2,

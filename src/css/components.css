@@ -292,15 +292,10 @@ footer i:hover {
 
 /* ### ABOUT US PAGE ### */
 .about-us {
-  position: absolute;
-  top: 20vh;
-  left: 50%;
-  transform: translateX(-50%) scale(0.80);
-  transform-origin: top center;
-  max-width: 1200px;
-  width: 90%;
+  width: 900px;
   z-index: 10;
   padding: 2rem;
+  margin-top: 200px;
 }
 
 .about-us-header {
@@ -367,17 +362,20 @@ footer i:hover {
  z-index: 11; 
 }
 
-.shop-now-button {
+.shop-now-button,
+.shop-now-button-mobile {
   background: var(--color-secondary);
   color: var(--color-primary);
   padding: 0.75rem 2rem;
+  text-decoration: none;
   border: none;
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.shop-now-button:hover {
+.shop-now-button:hover,
+.shop-now-button-mobile:hover {
   opacity: 0.5;
 }
 
