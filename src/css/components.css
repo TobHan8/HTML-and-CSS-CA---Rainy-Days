@@ -4,7 +4,7 @@ header .header-logo,
 footer .footer-logo {
   width: clamp(var(--footer-logo-min), 18vw, var(--footer-logo-max));
   height: auto;
-  background: url(/assets/images/header-logo.svg) center/contain no-repeat;
+  background: url(../../assets/images/header-logo.svg) center/contain no-repeat;
   background-size: contain;
   cursor: pointer;
   text-indent: -9999px;
